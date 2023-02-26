@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liverpool F.C. Fan-Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&display=swap" rel="stylesheet"> 
+    <style>
+        body {
+            margin: 0;
+            height: 100%;
+            background-image: url("liv.jpg");
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            color: yellow;
+        }
+
+        h1 {
+            margin-top: 0px;
+        }
+
+        .button_container {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 30%;
+        }
+
+        .description, .link {
+            text-align: center;
+        }
+
+        .description {
+            font-size: 2rem;
+        }
+
+        .btn {
+            border: none;
+            display: block;
+            text-align: center;
+            cursor: pointer;
+            text-transform: uppercase;
+            outline: none;
+            overflow: hidden;
+            position: relative;
+            color: #fff;
+            font-weight: 700;
+            font-size: 15px;
+            background-color: #222;
+            padding: 17px 60px;
+            margin: 0 auto;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+        }
+
+        .btn span {
+            position: relative; 
+            z-index: 1;
+        }
+
+        .btn:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 490%;
+            width: 140%;
+            background: #78c7d2;
+            -webkit-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+            -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+            transform: translateX(-98%) translateY(-25%) rotate(45deg);
+        }
+
+        .btn:hover:after {
+            -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+            transform: translateX(-9%) translateY(-25%) rotate(45deg);
+        }
+
+        a {
+            text-decoration: none;
+            color: #db0715;
+        }
+
+        a:visited {
+            color: #db0715;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Welcome!</h1><br><br><br><br><br>
+    <h2>This is a Liverpool F.C. Fan-Page.</h2>
+    <p><b>This fan-page contains all the information about players, stadium, trophies that Liverpool has won and the kits that they wore throughout the years.</b></p><br><br><br><br><br><br>
+    <div class="container">
+        <p class="description">To go the homepage: </p>
+        <button class="btn"><span><a href="dropdown.html">CLICK HERE!</a></span></button>
+    </div>
+    <script src="dropdown.js"></script>
+</body>
+</html>

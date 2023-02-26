@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Julee&family=Kanit&family=Libre+Barcode+39+Extended+Text&family=Macondo&family=Megrim&family=Nabla&family=Rubik+80s+Fade&family=Rubik+Vinyl&family=Share+Tech+Mono&family=Ubuntu&display=swap');
+
+:root {
+    font-size: 16px;
+    font-family: 'Megrim', cursive;
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+}
+
+body {
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+}
+
+main {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+.navbar {
+    width: 5rem; /*matches the margin-left in main*/
+    height: 100vh;
+    position: fixed;
+    background-color: var(--bg-primary);
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> 
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #b8161f;
+            font-family: 'Rubik', sans-serif;
+            font-size: 19px;
+        }
+
+        nav {
+            margin: 50px 0;
+            background-color: #e31b23;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            position: relative;
+        }
+
+        nav ul li {
+            display: inline-block;
+            background-color: #e31b23;
+        }
+
+        nav a {
+            display: block;
+            padding: 0px 10px;
+            color: #fff;
+            font-size: 20px;
+            line-height: 60px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #b8161f;
+        }
+
+        nav ul ul {
+            display: none;
+            position: absolute;
+            top: 60px;
+        }
+
+        nav ul li:hover > ul {
+            display: inherit;
+        }
+
+        nav ul ul li {
+            width: 170px;
+            float: none;
+            display: list-item;
+            position: relative;
+        }
+
+        nav ul ul ul li {
+            position: relative;
+            left: 170px;
+            top: -60px;
+        }
+
+        li > a:after { content: '+'; }
+        li > a:only-child:after { content: ''; }
+
+        section {
+            color: #fff;
+            width: 900px;
+            height: 300px;
+            text-align: center;
+            position: relative;
+        }
+
+        .hidden {
+            opacity: 0;
+            filter: blur(5px);
+            transform: translateX(-100%);
+            transition: all 1s;
+        }
+
+        .show {
+            opacity: 1;
+            filter: blur(0);
+            transform: translateX(0);
+        }
+
+        .lalign {
+            width: 50%;
+            height: 20%;
+        }
+
+        #a {
+            position: absolute;
+            top: 0%;
+            left: 50%;
+        }
+
+        .btn {
+            border: none;
+            display: block;
+            text-align: center;
+            cursor: pointer;
+            text-transform: uppercase;
+            outline: none;
+            overflow: hidden;
+            position: relative;
+            color: #fff;
+            font-weight: 700;
+            font-size: 15px;
+            background-color: #fd6b5e;
+            padding: 17px 60px;
+            margin: 0 auto;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+        }
+
+        .btn span {
+            position: relative; 
+            z-index: 1;
+        }
+
+        .btn:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 490%;
+            width: 140%;
+            background: #40c5c0;
+            -webkit-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+            -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+            transform: translateX(-98%) translateY(-25%) rotate(45deg);
+        }
+
+        .btn:hover:after {
+            -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+            transform: translateX(-9%) translateY(-25%) rotate(45deg);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <ul>
+                <li><a href="dropdown.html"><img src="liv.jpg" height="80px" width="80px"></a></li>
+                <li><a href="curves.html">Squad</a></li>
+                <li><a href="trophy.html">Trophies</a></li>
+                <li><a href="anfield.html">Stadium</a></li>
+                <li><a href="kit.html">Kit</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+          <nav>
+            <ul>
+                <li>
+                    <section class="hidden">
+                        <div class="lalign">
+                            <div class="left" style="text-align: left;">
+                                <h1>&emsp;Intro</h1>
+                            </div>
+                            <p>
+                                <br><br>
+                                Liverpool Football Club is a professional football club based in Liverpool, England. The club competes in the Premier League, the top tier of English football. Founded in 1892, the club joined the Football League the following year and has played its home games at Anfield since its formation.
+                            </p>
+                        </div>
+                    </section>
+                </li>
+                <li>
+                        <img src="np_file_192978-scaled.jpeg" height="300px" width="400px" id="a">
+                </li>
+            </ul>
+          </nav>  
+    </div>
+    <div>
+        <nav>
+            <ul>
+                <li>
+                    <section class="hidden">
+                        <br><br>
+                        <p>To view our players:</p>
+                        <br><br><br>
+                        <button class="btn"><span><a href="curves.html">Click here </a></span></button>
+                    </section>
+                </li>
+                <li>
+                    <img src="players.jpg" height="300px" width="450px" id="a">
+                </li>   
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <nav>
+            <ul>
+                <li>
+                    <section class="hidden">
+                        <br><br><br>
+                        <p>To see all the trophies our team has won:</p>
+                        <br><br><br>
+                        <button class="btn"><span><a href="trophy.html">Click here </a></span></button>
+                    </section>
+                </li>
+                <li>
+                    <img src="trophy.jpg" height="300px" width="450px" id="a">
+                </li>   
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <nav>
+            <ul>
+                <li>
+                    <section class="hidden">
+                        <br><br><br>
+                        <p>To know more about our stadium:</p>
+                        <br><br><br>
+                        <button class="btn"><span><a href="anfield.html">Click here </a></span></button>
+                    </section>
+                </li>
+                <li>
+                    <img src="anfield.jpg" height="300px" width="450px" id="a">
+                </li>   
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <nav>
+            <ul>
+                <li>
+                    <section class="hidden">
+                        <br><br><br>
+                        <p>To buy/view our kits:</p>
+                        <br><br><br>
+                        <button class="btn"><span><a href="kit.html">Click here </a></span></button>
+                    </section>
+                </li>
+                <li>
+                    <img src="kit.jpg" height="300px" width="450px" id="a">
+                </li>   
+            </ul>
+        </nav>
+    </div>
+    <script src="dropdown.js"></script>
+</body>
+</html>

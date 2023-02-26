@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squad</title>
+    <link rel="stylesheet" href="curves.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Julee&family=Kanit&family=Libre+Barcode+39+Extended+Text&family=Macondo&family=Megrim&family=Nabla&family=Poppins:wght@600&family=Rubik+80s+Fade&family=Rubik+Vinyl&family=Share+Tech+Mono&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <style>
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'Kanit', sans-serif;
+            color: white;
+            background-color: #b8161f;
+        }
+
+        section {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 400px;
+            padding-top: 100px;
+        }
+
+        div {
+            background: #e31b23;
+        }
+
+        .red {
+            background: #e31b23;
+        }
+
+        .curve {
+            position: absolute;
+            height: 250px;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+        }
+
+        .curve::before {
+            content: '';
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            width: 55%;
+            height: 100%;
+            transform: translate(85%, 60%);
+            background-color: #b8161f;
+        }
+
+        .curve::after {
+            content: '';
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            width: 55%;
+            height: 100%;
+            background-color: #e31b23;
+            transform: translate(-4%, 40%);
+            z-index: -1;
+        }
+
+        nav{
+            float: none; 
+            clear: both;
+            width: 30%; 
+            margin: 10% auto;
+            background: #e31b23;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        nav li{
+                float: none; 
+            width: 100%;
+        }
+
+        nav li a{
+            display: block; 
+            width: 100%; 
+            padding: 20px; 
+            border-left: 5px solid; 
+            position: relative; 
+            z-index: 2;
+            text-decoration: none;
+            color: #444;
+            box-sizing: border-box;  
+            -moz-box-sizing: border-box;  
+            -webkit-box-sizing: border-box; 
+        }
+                
+        nav li a:hover{ border-bottom: 0px; color: #fff;}
+        nav li:first-child a{ border-left: 10px solid #3498db; }
+        nav li:nth-child(2) a{ border-left: 10px solid #ffd071; }
+        nav li:nth-child(3) a{ border-left: 10px solid #f0776c; }
+        nav li:last-child a{ border-left: 10px solid #1abc9c; }
+
+        nav li a:after { 
+            content: "";
+            height: 100%; 
+            left: 0; 
+            top: 0; 
+            width: 0px;  
+            position: absolute; 
+            transition: all 0.3s ease 0s; 
+            -webkit-transition: all 0.3s ease 0s; 
+            z-index: -1;
+        }
+
+        nav li a:hover:after{ width: 100%; }
+        nav li:first-child a:after{ background: #3498db; }
+        nav li:nth-child(2) a:after{ background: #ffd071; }
+        nav li:nth-child(3) a:after{ background: #f0776c; }
+        nav li:nth-child(4) a:after{ background: #007d9e; }
+        nav li:last-child a:after{ background: #1abc9c; }
+
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li><a href="dropdown.html"><img src="liv.jpg" height="60px" width="60px"></a></li>
+        </ul>
+    </div>
+    <section class="red">
+        <h1>Liverpool Squad</h1>
+        <img src="https://d3j2s6hdd6a7rg.cloudfront.net/v2/uploads/media/page_banner/0002/34/thumb_133347_page_banner_header_large.jpeg">
+        <p>Click on the position of the players to get their info and stats.  </p>
+        <img src="">
+        <div class="curve"></div>
+    </section>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="goalkeeper.html">GoalKeepers</a></li>
+                <li><a href="midfielders.html">MidFielders</a></li>
+                <li><a href="forwards.html">Forwards</a></li>
+                <li><a href="defender.html">Defenders</a></li>
+                <li><a href="manager.html">Managers</a></li>
+            </ul>
+        </nav>
+    </section>
+
+</body>
+
+</html>
